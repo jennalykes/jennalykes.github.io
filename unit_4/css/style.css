@@ -1,19 +1,19 @@
 body {
-	margin: 0;
-	color: #fff;
-	text-align: center;
+  margin: 0;
+  color: #fff;
+  text-align: center;
 }
 
 h1 {
-	font-family:'Open Sans', sans-serif;
+  font-family:'Open Sans', sans-serif;
   font-weight: 800;
-	text-transform: uppercase; 
+  text-transform: uppercase; 
   letter-spacing: .15em;
-	font-size: 8em;
-	text-align: center;
+  font-size: 8em;
+  text-align: center;
 }
 
-h2{
+h2 {
   font-family:'Open Sans', sans-serif;
   font-weight: 800;
   text-transform: uppercase; 
@@ -33,14 +33,14 @@ div {
 }
 
 .featured-text {
-  line-height: 1%;
-	display: flex;
+	line-height: 1%;
+  display: flex;
   position: absolute;
   width: 80%;
   top: 15%;
   left: 50%;
   transform: translateY(-15%) translateX(-50%);
-   z-index: 1;
+  z-index: 1;
 
 }
 
@@ -53,20 +53,17 @@ div {
 .header-imgs {
 	flex: 1;
 	max-width: 33%;
-  max-height: 80%;
 	background-color: rgba(0,0,0,0.4);
 }
 
-
-
 .bg-imgs {
-    margin: 0px;
-    padding: 0px;
-    vertical-align: middle;
-    max-height: 800px;
-    background-size: cover;
-    position: relative;
-    z-index: -2;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+  max-height: 800px;
+  background-size: cover;
+  position: relative;
+  z-index: -2;
 }
 
 .bg-imgs-text {
