@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Cryptids of the World</title>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i|Open+Sans:300,400,800" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="featured-text">
+				<h1>Cryptids</h1>
+				<h4>of the</h4> 
+				<h1>World</h1>
+			</div>
+			<div class="header-imgs">
+				<article>
+					<img src="images/bg-img-1.jpg" class="bg-imgs">
+					<a href="#land-cryptids" class="bg-imgs-text"><h3>Land</h3></a>
+				</article>
+			</div>
+			<div class="header-imgs">
+				<article>
+					<img src="images/bg-img-2.jpg" class="bg-imgs">
+					<a href="#sea-cryptids" class="bg-imgs-text"><h3>Sea</h3></a>
+				</article>
+			</div>
+			<div class="header-imgs">
+				<article>
+					<img src="images/bg-img-3.jpg" class="bg-imgs">
+					<a href="#sky-cryptids" class="bg-imgs-text"><h3>Sky</h3></a>
+				</article>
+			</div>
+		</header>
+		<nav>
+			<a href="#land-cryptids">Land</a>
+			<a href="#sea-cryptids">Sea</a>
+			<a href="#sky-cryptids">Sky</a>
+		</nav>
+		<section id="land-cryptids">
+			<h2 id="land-text">Land Cryptids</h2>
+			<ul class="cryptid-tile-container">
+				<li class="cryptid-tiles"><a href="link">Adjule</a></li>
+				<li class="cryptid-tiles"><a href="link">Am Fear Liath Mór</a></li>
+				<li class="cryptid-tiles"><a href="link">Aswang</a></li>
+				<li class="cryptid-tiles"><a href="link">Bigfoot</a></li>
+				<li class="cryptid-tiles"><a href="link">Black Shuck</a></li>
+				<li class="cryptid-tiles"><a href="link">Chupacabra</a></li>
+				<li class="cryptid-tiles"><a href="link">De Loys' Ape</a></li>
+				<li class="cryptid-tiles"><a href="link">Garou</a></li>
+				<li class="cryptid-tiles"><a href="link">Jackalope</a></li>
+				<li class="cryptid-tiles"><a href="link">Jersey Devil</a></li>
+				<li class="cryptid-tiles"><a href="link">Kappa</a></li>
+				<li class="cryptid-tiles"><a href="link">Koolakamba</a></li>
+				<li class="cryptid-tiles"><a href="link">Man-eating Tree</a></li>
+				<li class="cryptid-tiles"><a href="link">Megalania Prisca</a></li>
+				<li class="cryptid-tiles"><a href="link">Muhuru</a></li>
+				<li class="cryptid-tiles"><a href="link">Ozark Howler</a></li>
+				<li class="cryptid-tiles"><a href="link">Reptilians</a></li>
+				<li class="cryptid-tiles"><a href="link">Tikbalang</a></li>
+				<li class="cryptid-tiles"><a href="link">Wendigo</a></li>
+				<li class="cryptid-tiles"><a href="link">Wolpertinger</a></li>
+				<li class="cryptid-tiles"><a href="link">Yowie</a></li>
+			</ul>
+		</section>
+		<section id="sea-cryptids">
+			<h2 id="sea-text">Sea Cryptids</h2>
+			<ul class="cryptid-tile-container">
+				<li class="cryptid-tiles"><a href="link">Altamaha-ha</a></li>
+				<li class="cryptid-tiles"><a href="link">Ayia Napa sea monster</a></li>
+				<li class="cryptid-tiles"><a href="link">Bessie</a></li>
+				<li class="cryptid-tiles"><a href="link">Buru</a></li>
+				<li class="cryptid-tiles"><a href="link">Dingonek</a></li>
+				<li class="cryptid-tiles"><a href="link">Globster</a></li>
+				<li class="cryptid-tiles"><a href="link">Kaijin</a></li>
+				<li class="cryptid-tiles"><a href="link">Kelpies</a></li>
+				<li class="cryptid-tiles"><a href="link">Kraken</a></li>
+				<li class="cryptid-tiles"><a href="link">Lariosauro</a></li>
+				<li class="cryptid-tiles"><a href="link">Megalodon</a></li>
+				<li class="cryptid-tiles"><a href="link">Mermaid</a></li>
+				<li class="cryptid-tiles"><a href="link">Montalk Monster</a></li>
+				<li class="cryptid-tiles"><a href="link">Nessie</a></li>
+				<li class="cryptid-tiles"><a href="link">Sea Monk</a></li>
+				<li class="cryptid-tiles"><a href="link">Tatzelwurm</a></li>
+				<li class="cryptid-tiles"><a href="link">Trunko</a></li>
+			</ul>
+		</section>
+		<section id="sky-cryptids">
+			<h2 id="sky-text">Sky Cryptids</h2>
+			<ul class="cryptid-tile-container">
+				<li class="cryptid-tiles"><a href="link">Ahool</a></li>
+				<li class="cryptid-tiles"><a href="link">Chickcharney</a></li>
+				<li class="cryptid-tiles"><a href="link">Olitiau</a></li>
+				<li class="cryptid-tiles"><a href="link">Thunderbird</a></li>
+			</ul>
+		</section>
+		<footer>
+			<h4>&copy; 2017</h4>
+		</footer>
+
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+		<script type="text/javascript">
+		(function($) {          
+    		$(document).ready(function(){                    
+        		$(window).scroll(function(){                          
+        			if ($(this).scrollTop() > 600) {
+                		$('nav').slideDown(200);
+           			} else {
+            			$('nav').slideUp(200);
+        			}
+        		});
+    		});
+		})(jQuery);
+		</script>
+
+		<script>
+		$(document).ready(function(){
+			$('a[href^="#"]').on('click',function (e) {
+	    	e.preventDefault();
+
+	    	var target = this.hash;
+	   		var $target = $(target);
+
+	    	$('html, body').stop().animate({
+	        	'scrollTop': $target.offset().top
+	    	}, 900, 'swing', function () {
+	        	window.location.hash = target;
+	    		});
+			});
+		});
+		</script>
+
+	</body>
+
+</html>
