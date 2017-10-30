@@ -1,0 +1,55 @@
+body {
+  font-family: 'Lora', serif;
+  color: #262626;
+  font-size: 36px;
+  line-height: 1.4em;
+}
+
+div {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 15%;
+}
+
+a {
+  color:#9105bc;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#c7afce;
+  text-decoration: underline;
+}
+
+a:active {
+  color:#3a1f42;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1600px) {
+  body {
+    font-size: 28px;
+    line-height: 1.4em;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 21px;
+    line-height: 1.5em;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  div {
+  width: 86%;
+  margin-left: 7%;
+  margin-top: 10%;
+}
+}
